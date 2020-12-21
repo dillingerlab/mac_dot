@@ -1,0 +1,20 @@
+#!/bin/bash
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias l='ls -l'
+alias ll='ls -alF'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# Python
+alias pytree="tree -I '__pycache__|*~'"
+alias python=python3
+alias virm="find . -name '*~' -delete"
+alias pip=pip3

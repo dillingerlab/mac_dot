@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Create a new directory and enter it
+mkd() {
+  mkdir -p "$@"
+  cd "$@" || exit
+}
+
+# Make a temporary directory and enter it
+tmpd() {
+  local dir
+  if [ $# -eq 0 ]; then
+    dir=$(mktemp -d)
+  else
+    dir=$(mktemp -d -t "${1}.XXXXXXXXXX")
+  fi
+  cd "$dir" || exit
+}
+
+# `v` with no arguments opens the current directory in Vim, otherwise opens the
+# given location
+v() {
+  if [ $# -eq 0 ]; then
+    vim .
+  else
+    vim "$@"
+  fi
+}
