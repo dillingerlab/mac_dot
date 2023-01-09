@@ -36,6 +36,12 @@ git: ## Setup git
 	git config --global init.defaultBranch main
 
 
+python:
+	brew install python3.8
+	brew install python3.10
+	brew link python3.8
+
+
 node:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 	$(HOME)/.nvm/nvm install node
@@ -45,6 +51,7 @@ aws:
 	npm install -g aws-cdk
 	curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 	sudo installer -pkg AWSCLIV2.pkg -target /
+
 
 ruby:
 	brew install ruby-install
@@ -56,6 +63,7 @@ ruby:
 	)
 	echo source /opt/homebrew/opt/chruby/share/chruby/chruby.sh >> $(HOME)/.zshrc
 	echo chruby ruby-3.2.0 >> $(HOME)/.zshrc
+
 
 tools:
 	brew install direnv
