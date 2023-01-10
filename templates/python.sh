@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def main():
     """Description of the function"""
 

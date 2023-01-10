@@ -1,6 +1,11 @@
+use zsh
 install homebrew
 install iterm2
-
+## finish python
+source ~/.zshrc
+pyenv install 3.8
+pyenv install 3.10
+pyenv global 3.8
 TODO:
 Find way to append following to `.gitconfig`:
 ```

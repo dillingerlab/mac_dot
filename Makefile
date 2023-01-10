@@ -1,3 +1,4 @@
+SHELL := /bin/zsh
 .DEFAULT_GOAL := help
 
 VIMBUNDLE=$(HOME)/.vim/bundle
@@ -34,12 +35,12 @@ git: ## Setup git
 	git config --global core.abbrev 8
 	git config --global alias.lease 'push --force-with-lease'
 	git config --global init.defaultBranch main
+	git config --global push.autoSetupRemote true
 
 
 python:
-	brew install python3.8
-	brew install python3.10
-	brew link python3.8
+	brew install pyenv
+	echo "follow steps in README.md"
 
 
 node:
