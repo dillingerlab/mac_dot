@@ -40,6 +40,7 @@ git: ## Setup git
 
 python:
 	brew install pyenv
+	brew install openssl readline sqlite3 xz zlib tcl-tk
 	echo "follow steps in README.md"
 
 
