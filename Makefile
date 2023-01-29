@@ -63,13 +63,13 @@ ruby:
 	        source /opt/homebrew/opt/chruby/share/chruby/chruby.sh \
 	        chruby ruby-3.2.0 \
 	)
-	echo source /opt/homebrew/opt/chruby/share/chruby/chruby.sh >> $(HOME)/.zshrc
-	echo chruby ruby-3.2.0 >> $(HOME)/.zshrc
 
 
 tools:
 	brew install direnv
 	brew install tree
+	brew install jq
+	brew install yq
 
 
 misc:
