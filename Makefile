@@ -72,8 +72,11 @@ tools:
 	brew install yq
 
 
-misc:
-	sudo sed -i 's/# set bell-style none/set bell-style none/' /etc/inputrc
+pomodoro:
+	mkdir -p $(HOME)/Applications/pomodoro
+	curl -L https://github.com/open-pomodoro/openpomodoro-cli/releases/download/v0.3.0/openpomodoro-cli_0.3.0_darwin_amd64.tar.gz -o $(HOME)/Downloads/pomodoro.tar.gz
+	tar -zxvf $(HOME)/Downloads/pomodoro.tar.gz -C $(HOME)/Applications/pomodoro
+	ln -snf $(HOME)/Applications/pomodoro/pomodoro /usr/local/bin/pomodoro
 
 
 all:
