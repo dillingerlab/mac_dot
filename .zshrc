@@ -28,7 +28,6 @@ done
 unset file
 
 export EDITOR='vim'
-export MANPAGER="vim -M +MANPAGER - "
 HISTTIMEFORMAT="%F %T "
 
 parse_git_branch() {
