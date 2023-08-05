@@ -14,3 +14,4 @@ Find way to append following to `.gitconfig`:
 last = log -1 HEAD
 re2 = rebase -i HEAD~2
 ```
+https://stackoverflow.com/questions/20146972/is-there-a-way-to-make-alt-f-and-alt-b-jump-word-forward-and-backward-instead-of
