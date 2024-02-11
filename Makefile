@@ -44,6 +44,18 @@ python:
 	echo "follow steps in README.md"
 
 
+java:
+	curl -s "https://get.sdkman.io" | bash
+	@echo echo restart shell
+	sdk install java 21.0.2-zulu
+	sdk install maven
+
+clojure:
+	curl -o lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+	sudo mv $(CURDIR)/lein  /usr/local/bin/lein
+	sudo chmod a+x /usr/local/bin/lein
+
+
 node:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 	$(HOME)/.nvm/nvm install node
