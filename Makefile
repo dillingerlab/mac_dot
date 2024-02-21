@@ -37,6 +37,7 @@ git: ## Setup git
 	git config --global init.defaultBranch main
 	git config --global push.autoSetupRemote true
 	git config --global advice.skippedCherryPicks false
+	git config --global help.autocorrect prompt
 
 python:
 	brew install pyenv
