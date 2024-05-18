@@ -60,3 +60,4 @@ eval "$(direnv hook zsh)"
 
 # Add Brew PATH
 export PATH=/usr/local/bin:$PATH
+source "$HOME/.cargo/env"

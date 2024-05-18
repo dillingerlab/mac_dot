@@ -79,6 +79,9 @@ pomodoro:
 	tar -zxvf $(HOME)/Downloads/pomodoro.tar.gz -C $(HOME)/Applications/pomodoro
 	ln -snf $(HOME)/Applications/pomodoro/pomodoro /usr/local/bin/pomodoro
 
+rust:
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 
 all:
 	$(MAKE) dotfiles
